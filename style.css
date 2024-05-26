@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.celda {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.celda.x {
+    color: #ff0000; /* Rojo para las X */
+}
+
+.celda.o {
+    color: #0000ff; /* Azul para las O */
+}
+
+.seleccion-modo {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.mensaje {
+    margin-top: 20px;
+    font-size: 1.5em;
+    height: 30px;
+}
+
+.boton-reiniciar {
+    margin-top: 10px;
+}
+
+.puntuaciones {
+    margin-top: 20px;
+}
+
+.puntuaciones h2 {
+    margin-bottom: 10px;
+}
+
+.puntuaciones p {
+    margin: 5px 0;
+}

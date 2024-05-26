@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Juego de Triki</h1>
+        <div class="seleccion-modo">
+            <button id="jvj">Jugador vs Jugador</button>
+            <button id="jvm">Jugador vs Máquina</button>
+        </div>
+        <div class="tablero" id="tablero">
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+            <div class="celda" data-celda></div>
+        </div>
+        <div class="mensaje" id="mensaje"></div>
+        <button id="botonReiniciar" class="boton-reiniciar">Reiniciar</button>
+        <div class="puntuaciones">
+            <h2>Puntuaciones</h2>
+            <p id="puntuacionX">Jugador X: 0</p>
+            <p id="puntuacionO">Jugador O: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
